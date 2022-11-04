@@ -1,4 +1,6 @@
 user_choice = input("rock paper scissors : ")
+user_choice = user_choice.lower()
+
 computer_choice = "rock"
 
 if user_choice == computer_choice:
