@@ -1,5 +1,18 @@
+import random
+options = ("rock", "paper", "scissors")
 user_choice = input("rock paper scissors : ")
-computer_choice = "rock"
+if not user_choice in options:
+    print("""
+          ** Invalid Option **
+          
+          * try again *
+          
+          """)
+    user_choice = input("rock paper scissors : ")
+
+computer_choice = random.choice(options)
+
+
 
 if user_choice == computer_choice:
     print(""" 
