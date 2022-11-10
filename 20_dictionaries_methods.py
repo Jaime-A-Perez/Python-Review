@@ -24,5 +24,7 @@ print(f"person with deleted methods {person}")
 print(f"items()   = {person.items()}")
 
 print(f"keys()    = {person.keys()}")
+list_keys = list(person.keys())
+print(f"types(keys())    = {type(list_keys)}")
 
 print(f"values()  = {person.values()}")
